@@ -45,9 +45,10 @@ GameObject:
   - component: {fileID: 1236973897429666746}
   - component: {fileID: 8717391006163681591}
   - component: {fileID: -7456648763972184550}
+  - component: {fileID: -7781697333531719239}
   m_Layer: 0
   m_Name: Missile
-  m_TagString: Untagged
+  m_TagString: Missile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,8 +131,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be48fc6d647de4c4f9e02662b85fe3bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  destroyDelay: 3
 --- !u!54 &-7456648763972184550
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -159,6 +158,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!136 &-7781697333531719239
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5311214845016930206}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.2585855
+  m_Height: 0.727331
+  m_Direction: 1
+  m_Center: {x: -0.000000029802322, y: -0.0000011920929, z: 0}
 --- !u!1 &8036262208207661575
 GameObject:
   m_ObjectHideFlags: 0
