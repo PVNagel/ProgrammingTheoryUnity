@@ -5,13 +5,11 @@ using UnityEngine;
 public class EnemyBomber : Enemy
 {
     public GameObject mine; // Reference to the mine prefab
-    private GameManager gameManager;
     private float mineInterval = 5f; // Time interval between dispersing mines
     private float lastTimeMined; // Time when the last mine was dispersed
 
     protected override void Start()
     {
-        gameManager = GameObject.FindObjectOfType<GameManager>();
         base.Start();
         movementSpeed = 10f; // Adjusted speed for the bomber
         lastTimeMined = Time.time; // Initialize last mine time
@@ -22,7 +20,7 @@ public class EnemyBomber : Enemy
         base.Update();
 
         // Disperse mines at the specified interval
-        if (!gameManager.isGameOver && Time.time - lastTimeMined >= mineInterval)
+        if (Time.time - lastTimeMined >= mineInterval)
         {
             FireMine();
             base.FireMissile();

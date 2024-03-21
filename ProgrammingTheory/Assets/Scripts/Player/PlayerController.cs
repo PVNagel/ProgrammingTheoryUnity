@@ -7,8 +7,10 @@ public class PlayerController : MonoBehaviour
     private float maxSpeed = 40f; // Adjust this value to control the maximum speed
     private float forwardForce = 5f; // Adjust this value to control the forward force
     private float rotationSpeed = 150f; // Adjust this value to control the rotation speed
+    
     public GameObject missile; // Reference to the missile prefab
     private Rigidbody rb;
+
 
     // Define play area boundaries
     private float leftBound = -130f;
